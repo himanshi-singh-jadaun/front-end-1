@@ -1,0 +1,160 @@
+/* GLobal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-image: url("./background-img5.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .btn {
+    outline: none;
+    border: none;
+    background-color: wheat;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+  .color-black{
+    color:black;
+  }
+  select {
+    appearance: none;
+    outline: black;
+    background-color: black;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: red;
+    border-color: black;
+  }
+  
+  .mb {
+    margin-bottom: 1rem;
+  }
+  
+  /* End GLobal Styles */
+  
+  .main-container {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #0E141B; */
+  }
+  
+  .clock-container {
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+background-image: radial-gradient(red,black);
+  }
+  
+  .current-time {
+    font-size: 2rem;
+    background-color: black;
+    color: red;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .alarm-form {
+    justify-content: space-between;
+    width: 100%;
+    margin: 60px;
+    
+  }
+  
+  .submit-button {
+    border-color: black;
+    background-color: white;
+    border: 10px;
+    border-radius: 2rem;
+    font-weight: bold;
+  }
+  
+  .set-alarm-container {
+    width: 100%;
+  }
+  
+  .set-alarm-container .set-alarm-container-title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  
+  }
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    font-size:xx-medium;
+  }
+  
+  .time {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .set:hover{
+    background-color: #4CBB17 ;
+    transition: all 1s;
+  }
+  .del:hover{
+    background-color: #D2042D;
+    transition: all 1s;
+  }
+  
+  .page-title{
+    
+    padding-top: 20px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    color: red;
+    
+  }
+
+  .page-title.hover{
+ 
+    
+  }
+  
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container{
+        padding: 80px;
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+  }
